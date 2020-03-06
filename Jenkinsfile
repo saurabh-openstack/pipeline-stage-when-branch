@@ -10,6 +10,8 @@ pipeline {
             artifactDaysToKeepStr: '10'
         ))
     }
+    
+    sh 'echo "NumtoKeepStr is $numToKeepStr"'
     stages {
         stage('Build Master') {
             when {
