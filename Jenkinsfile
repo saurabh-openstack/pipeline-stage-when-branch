@@ -11,7 +11,6 @@ pipeline {
         ))
     }
     
-    sh 'echo "NumtoKeepStr is $numToKeepStr"'
     stages {
         stage('Build Master') {
             when {
