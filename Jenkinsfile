@@ -7,7 +7,7 @@ pipeline {
         buildDiscarder(logRotator(
             numToKeepStr: 
             (env.BRANCH_NAME ==~ "^master*" || 
-             env.BRANCH_NAME ==~ "^release*") ? '6' : 
+             env.BRANCH_NAME ==~ "^release*") ? '8' : 
             (env.BRANCH_NAME =~ "^dev*") ? '3' : '5',
             artifactNumToKeepStr: '1',
             artifactDaysToKeepStr: '10'
